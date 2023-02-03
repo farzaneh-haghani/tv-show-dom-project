@@ -9,12 +9,16 @@
   </head>
 
   <body>
-    <p id="counter" class="nav"></p>
+    <section class="nav">
+      <label for="liveSearch">
+        Search<input type="text" id="liveSearch" />
+      </label>
+      <p id="counter"></p>
+    </section>
     <div id="root"></div>
-
     <!-- Loads a provided function called getAllEpisodes() which returns all episodes -->
     <script src="episodes.js"></script>
-    <footer class="nav">
+    <footer>
       The data has (originally) come from
       <a href="https://www.tvmaze.com">TVMaze</a>
     </footer>
