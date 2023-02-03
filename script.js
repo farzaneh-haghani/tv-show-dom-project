@@ -6,12 +6,12 @@ function setup() {
   const allEpisodes = getAllEpisodes();
   makePageForEpisodes(allEpisodes);
   const inputSearch = document.querySelector("#liveSearch");
-  inputSearch.addEventListener("keyup", () => {
+  inputSearch.addEventListener("keyup", (event) => {
     const newEpisodesArr = [];
     rootElem.innerHTML = "";
     allEpisodes.forEach(eachEpisode => {
-      if (eachEpisode.name.toLowerCase().includes(inputSearch.value.toLowerCase()) ||
-        eachEpisode.summary.toLowerCase().includes(inputSearch.value.toLowerCase()))
+      if (eachEpisode.name.toLowerCase().includes(event.target.value.toLowerCase()) ||
+        eachEpisode.summary.toLowerCase().includes(event.target.value.toLowerCase()))
         newEpisodesArr.push(eachEpisode);
     })
     makePageForEpisodes(newEpisodesArr);
@@ -20,7 +20,7 @@ function setup() {
 
 function makePageForEpisodes(episodeList) {
   const pCounter = document.querySelector("#counter");
-  pCounter.textContent = `Displaying ${episodeList.length} / episode(s)`;
+  pCounter.textContent = `Displaying ${episodeList.length} / 73 episode(s)`;
   episodeList.forEach(eachEpisode => {
     showEachEpisode(eachEpisode);
   });
