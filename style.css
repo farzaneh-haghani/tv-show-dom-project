@@ -13,7 +13,7 @@
 
 body {
   background-color: var(--pink);
-  font-size: 20px;
+  font-size: 18px;
 }
 
 #root {
@@ -57,6 +57,7 @@ img {
   font-weight: bolder;
   border-radius: 20ch;
   font-size: 24px;
+  box-shadow: 10px 10px 10px;
 }
 
 input[type="text"],
