@@ -10,7 +10,10 @@
 
   <body>
     <section class="nav">
-      <select name="selectMovie" id="selectMovie">
+      <select name="selectShows" id="selectShows">
+        <option value="empty">Please select a show</option>
+      </select>
+      <select name="selectEpisodes" id="selectEpisodes">
         <option value="all">All Episodes</option>
       </select>
       <input type="text" id="liveSearch" placeholder="Search..." />
@@ -18,7 +21,7 @@
     </section>
     <div id="root"></div>
     <!-- Loads a provided function called getAllEpisodes() which returns all episodes -->
-    <script src="episodes.js"></script>
+    <script src="shows.js"></script>
     <footer>
       The data has (originally) come from
       <a href="https://www.tvmaze.com">TVMaze</a>
