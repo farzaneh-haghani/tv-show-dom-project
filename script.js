@@ -66,6 +66,7 @@ function makeSelectEpisodes(episodeList) {
 
 function makePageForEpisodes(episodeList, allEpisode) {
   pCounter.textContent = `Displaying ${episodeList.length} / ${allEpisode.length} episode(s)`;
+  rootElem.innerHTML = "";
   episodeList.forEach(eachEpisode => {
     const divContainer = document.createElement("div");
     divContainer.classList.add("container");
